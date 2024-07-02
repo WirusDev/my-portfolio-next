@@ -9,7 +9,6 @@ import ThemeSwitcher from "@/components/ui/ThemeSwitcher";
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang='en'>
-      <Analytics />
       <body>
         <div className='drawer lg:drawer-open'>
           <input id='my-drawer-2' type='checkbox' className='drawer-toggle' />
@@ -33,6 +32,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
             <Header />
           </div>
         </div>
+        <Analytics />
       </body>
     </html>
   );
