@@ -42,7 +42,7 @@ const ThemeSwitcher: React.FC = () => {
   }, [theme]);
 
   return (
-    <div className='p-4'>
+    <div className='py-4'>
       <select
         title='Select theme'
         value={theme}

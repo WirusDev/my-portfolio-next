@@ -1,6 +1,6 @@
 import Projects from "@/components/sections/Projects";
 import Timeline from "@/components/sections/Timeline";
-
+import About from "@/components/sections/About";
 const HomePage = () => {
   return (
     <div>
@@ -40,13 +40,13 @@ const HomePage = () => {
             name='my_tabs_2'
             role='tab'
             className='tab'
-            aria-label='Blog'
+            aria-label='About'
           />
           <div
             role='tabpanel'
             className='tab-content bg-base-100 border-base-300 rounded-box p-6'
           >
-            Tab content 3
+            <About />
           </div>
         </div>
       </main>
