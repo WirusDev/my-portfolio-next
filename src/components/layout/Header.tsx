@@ -1,70 +1,82 @@
 import React from "react";
-import ThemeSwitcher from "../ui/ThemeSwitcher";
-
+import Image from "next/image";
+// import ThemeSwitcher from "@/components/ui/ThemeSwitcher";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "@/utils/fontawesome";
 const Header: React.FC = () => {
   return (
-    <div className='navbar bg-base-100'>
-      <div className='navbar-start'>
-        <div className='dropdown'>
-          <div tabIndex={0} role='button' className='btn btn-ghost btn-circle'>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              className='h-5 w-5'
-              fill='none'
-              viewBox='0 0 24 24'
-              stroke='currentColor'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth='2'
-                d='M4 6h16M4 12h16M4 18h7'
-              />
-            </svg>
+    <>
+      {" "}
+      <label
+        htmlFor='my-drawer-2'
+        aria-label='close sidebar'
+        className='drawer-overlay'
+      ></label>
+      <div className='menu bg-base-200 text-base-content h-full w-80 p-4 flex flex-col justify-between'>
+        {/* Sidebar content here */}
+        <div className='flex-1'>
+          <Image
+            src='/images/Evgenii.jpeg'
+            alt='Evgenii Larin'
+            className='rounded-md my-1 w-full'
+            width={200}
+            height={200}
+          />
+          <div className='flex flex-col text-ledt m-2'>
+            <p className='text-accent pb-1'>Full Stack Web-Developer</p>
+            <h1 className='text-3xl pb-2'>Evgenii Larin</h1>
+
+            <p>
+              I&apos;m a full-stack web developer with a passion for creating
+              web applications. I&apos;ve got experience in both front-end and
+              back-end development, and I&apos;m always up for new and exciting
+              challenges. ;)
+            </p>
           </div>
-          <ul
-            tabIndex={0}
-            className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52'
+
+          <div className=' '></div>
+        </div>
+
+        <div className='flex flex-row justify-between gap-1 items-center mx-4 my-2 rounded-md max-w-full p-4 bg-base-100'>
+          <a
+            title='instagram'
+            href='https://www.instagram.com/schenjalarin/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-accent'
           >
-            <li>
-              <a>Homepage</a>
-            </li>
-            <li>
-              <a>Portfolio</a>
-            </li>
-            <li>
-              <a>About</a>
-            </li>
-          </ul>
+            <FontAwesomeIcon icon={["fab", "instagram"]} size='2x' />
+          </a>
+          <a
+            title='telegram'
+            href='https://t.me/EvgeniiLari'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-accent'
+          >
+            <FontAwesomeIcon icon={["fab", "telegram"]} size='2x' />
+          </a>
+          <a
+            title='whatsapp'
+            href='https://wa.me/015140486743'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-accent'
+          >
+            <FontAwesomeIcon icon={["fab", "whatsapp"]} size='2x' />
+          </a>
+          <a
+            title='github'
+            href='https://github.com/WirusDev'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-accent'
+          >
+            <FontAwesomeIcon icon={["fab", "github"]} size='2x' />
+          </a>
         </div>
       </div>
-      <div className='navbar-center'>
-        <a className='btn btn-ghost text-xl'>ev-dev</a>
-      </div>
-      <div className='navbar-end'>
-        <ThemeSwitcher />
-
-        <button className='btn btn-ghost btn-circle' title='notifications'>
-          <div className='indicator'>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              className='h-5 w-5'
-              fill='none'
-              viewBox='0 0 24 24'
-              stroke='currentColor'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth='2'
-                d='M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9'
-              />
-            </svg>
-            <span className='badge badge-xs badge-primary indicator-item'></span>
-          </div>
-        </button>
-      </div>
-    </div>
+    </>
   );
 };
 
