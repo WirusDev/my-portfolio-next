@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Projects() {
@@ -19,7 +20,9 @@ export default function Projects() {
           <h2 className='card-title'>LingoA&A</h2>
           <p>How to park your car at your garage?</p>
           <div className='card-actions justify-end'>
-            <button className='btn btn-neutral'>Learn more</button>
+            <button className='btn btn-neutral'>
+              <Link href='/projects/lingoaa'>Learn more</Link>
+            </button>
           </div>
         </div>
       </div>
@@ -37,7 +40,9 @@ export default function Projects() {
           <h2 className='card-title'>Cerise</h2>
           <p>How to park your car at your garage?</p>
           <div className='card-actions justify-end'>
-            <button className='btn btn-neutral'>Learn more</button>
+            <button className='btn btn-neutral'>
+              <Link href='/projects/cerise'>Learn more</Link>
+            </button>
           </div>
         </div>
       </div>
