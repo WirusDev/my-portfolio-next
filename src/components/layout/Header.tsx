@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 // import ThemeSwitcher from "@/components/ui/ThemeSwitcher";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@/utils/fontawesome";
@@ -7,7 +8,6 @@ import { motion } from "framer-motion";
 const Header: React.FC = () => {
   return (
     <>
-      {" "}
       <label
         htmlFor='my-drawer-2'
         aria-label='close sidebar'
@@ -19,7 +19,7 @@ const Header: React.FC = () => {
           <Image
             src='/images/Evgenii.jpeg'
             alt='Evgenii Larin'
-            className='rounded-lg my-1 w-full'
+            className='rounded-lg my-1 w-full mask mask-hexagon'
             width={200}
             height={200}
           />
@@ -27,7 +27,14 @@ const Header: React.FC = () => {
             <p className='text-accent pb-1'>Full Stack Web-Developer</p>
             <h1 className='text-3xl pb-2'>Evgenii Larin</h1>
           </div>
+          <br />
+
+          <Link className='btn btn-accent' href='/contact'>
+            Contact me
+          </Link>
         </div>
+
+        {/* FOOTER */}
         <div className='flex flex-row  justify-between gap-1 items-center m-2 rounded-md max-w-full p-4 bg-base-100'>
           <motion.a
             whileHover={{ scale: 1.3 }}

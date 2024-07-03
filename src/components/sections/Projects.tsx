@@ -20,9 +20,9 @@ export default function Projects() {
           <h2 className='card-title'>LingoA&A</h2>
           <p>How to park your car at your garage?</p>
           <div className='card-actions justify-end'>
-            <button className='btn btn-neutral'>
-              <Link href='/projects/lingoaa'>Learn more</Link>
-            </button>
+            <Link className='btn btn-neutral' href='/projects/lingoaa'>
+              Learn more
+            </Link>
           </div>
         </div>
       </div>
@@ -40,9 +40,9 @@ export default function Projects() {
           <h2 className='card-title'>Cerise</h2>
           <p>How to park your car at your garage?</p>
           <div className='card-actions justify-end'>
-            <button className='btn btn-neutral'>
-              <Link href='/projects/cerise'>Learn more</Link>
-            </button>
+            <Link className='btn btn-neutral btn-sm' href='/projects/cerise'>
+              Learn more
+            </Link>
           </div>
         </div>
       </div>
