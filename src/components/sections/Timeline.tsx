@@ -1,13 +1,10 @@
 "use client";
 
 import React from "react";
-
+import Link from "next/link";
 export default function Timeline() {
   return (
-    <div className='relative'>
-      <div className='absolute inset-0 flex justify-center'>
-        <div className='w-px bg-gray-300 h-full'></div>
-      </div>
+    <div>
       <ul className='timeline timeline-snap-icon max-md:timeline-compact timeline-vertical'>
         <li>
           <div className='timeline-middle'>
@@ -24,14 +21,24 @@ export default function Timeline() {
               />
             </svg>
           </div>
-          <div className='timeline-start mb-10 md:text-end'>
+          <div className='timeline-start mb-12 md:text-end'>
             <time className='font-mono italic'>02/2024 - 07/2024</time>
             <div className='text-lg font-black'>
               Weiterbildung zum Full Stack Web Developer
             </div>
-            inkl. TypeScript, React, NodeJS etc. <br />{" "}
-            <strong>Bei DBE Academy</strong>
+            inkl. TypeScript, React, NodeJS etc.
+            <br />
+            <Link
+              href='/docs/DBE.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-blue-500 underline'
+            >
+              Zertifikat ansehen
+            </Link>
+            <br />
           </div>
+
           <hr />
         </li>
         <li>
@@ -54,7 +61,16 @@ export default function Timeline() {
             <time className='font-mono italic'>09/2022 - 01/2024</time>
             <div className='text-lg font-black'>Amazon Kundenservice</div>
             Homeoffice
-            <br />+ Selbstschulung, um Entwickler zu werden.
+            <br />+ Selbstschulung zur Qualifikation als Entwickler
+            <br />
+            <Link
+              href='/docs/Amazon.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-blue-500 underline'
+            >
+              Arbeitszeugnis ansehen
+            </Link>
           </div>
           <hr />
         </li>
@@ -83,14 +99,16 @@ export default function Timeline() {
             <br />
             Eingesetzte Tools: InDesign, Excel
             <br />
-            <a
-              href='/arbeitszeugnis_abihome.pdf'
+            <Link
+              href='/docs/arbeitszeugnis_abihome.pdf'
               target='_blank'
               rel='noopener noreferrer'
               className='text-blue-500 underline'
             >
-              Arbeitzeugnis angucken
-            </a>
+              Arbeitszeugnis ansehen
+            </Link>
+            <br />
+            <br />
           </div>
           <hr />
         </li>
@@ -130,6 +148,15 @@ export default function Timeline() {
             <br />
             - Content-Management Systeme und Webdesign
             <br />- Plakat-, Logo- und Corporate Design
+            <br />{" "}
+            <Link
+              href='/docs/Designschule.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-blue-500 underline'
+            >
+              Zertifikat ansehen
+            </Link>
           </div>
           <hr />
         </li>
