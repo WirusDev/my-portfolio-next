@@ -5,28 +5,26 @@ const HomePage = () => {
   return (
     <div>
       <main className=''>
-        <div role='tablist' className='tabs tabs-lifted tabs-lg'>
+        <div role='tablist' className='tabs tabs-lifted tabs-lg '>
           <input
             type='radio'
             name='my_tabs_2'
             role='tab'
             className='tab'
-            aria-label='Projects'
-            defaultChecked
+            aria-label='About'
           />
           <div
             role='tabpanel'
-            className='tab-content bg-base-100 border-base-300 rounded-box p-6 '
+            className='tab-content bg-base-100 border-base-300 rounded-box p-6'
           >
-            <Projects />
+            <About />
           </div>
-
           <input
             type='radio'
             name='my_tabs_2'
             role='tab'
             className='tab'
-            aria-label='Timeline'
+            aria-label='Lebenslauf'
           />
           <div
             role='tabpanel'
@@ -40,13 +38,14 @@ const HomePage = () => {
             name='my_tabs_2'
             role='tab'
             className='tab'
-            aria-label='About'
+            aria-label='Projekte'
+            defaultChecked
           />
           <div
             role='tabpanel'
-            className='tab-content bg-base-100 border-base-300 rounded-box p-6'
+            className='tab-content bg-base-100 border-base-300 rounded-box p-6 '
           >
-            <About />
+            <Projects />
           </div>
         </div>
       </main>

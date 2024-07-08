@@ -24,7 +24,7 @@ const Header: React.FC = () => {
             height={200}
           />
           <div className='flex flex-col text-ledt m-2'>
-            <p className='text-accent pb-1'>Full Stack Web-Developer</p>
+            <p className='text-secondary pb-1'>Full Stack Web-Developer</p>
             <h1 className='text-3xl pb-2'>Evgenii Larin</h1>
           </div>
 

@@ -138,8 +138,7 @@ export default function Timeline() {
             <br />
             Schwerpunkt: Content Management
             <br />
-            <br />
-            Ausgewählte Lerninhalte:
+            <strong>Lerninhalte:</strong>
             <br />
             - UI/UX Design
             <br />
