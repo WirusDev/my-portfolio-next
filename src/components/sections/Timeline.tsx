@@ -37,6 +37,7 @@ export default function Timeline() {
               Zertifikat ansehen
             </Link>
             <br />
+            <br />
           </div>
 
           <hr />
