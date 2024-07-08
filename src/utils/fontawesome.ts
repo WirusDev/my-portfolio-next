@@ -1,14 +1,9 @@
-// src/utils/fontawesome.ts
 import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faInstagram,
-  faTelegram,
-  faWhatsapp,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import "@fortawesome/fontawesome-svg-core/styles.css"; // Импортируйте стили
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
-config.autoAddCss = false; // Предотвратите автоматическое добавление CSS
+config.autoAddCss = false;
 
-library.add(faInstagram, faTelegram, faWhatsapp, faGithub);
+library.add(fas, fab);

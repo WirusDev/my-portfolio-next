@@ -13,7 +13,7 @@ const Header: React.FC = () => {
         aria-label='close sidebar'
         className='drawer-overlay'
       ></label>
-      <div className='menu bg-base-200 text-base-content h-full w-80 p-4 flex flex-col justify-between'>
+      <div className='menu bg-base-200 text-base-content h-full w-80 px-4 flex flex-col justify-between'>
         {/* Sidebar content here */}
         <div className=''>
           <Image
@@ -27,59 +27,78 @@ const Header: React.FC = () => {
             <p className='text-accent pb-1'>Full Stack Web-Developer</p>
             <h1 className='text-3xl pb-2'>Evgenii Larin</h1>
           </div>
+
           <br />
-
-          <Link className='btn btn-accent' href='/contact'>
-            Contact me
+          <Link
+            href='mailto:hello@ev-dev.de'
+            className='btn btn-accent flex items-center space-x-2 my-2'
+          >
+            <FontAwesomeIcon icon={["fas", "envelope"]} />
+            <span>E-Mail</span>
           </Link>
-        </div>
-
-        {/* FOOTER */}
-        <div className='flex flex-row  justify-between gap-1 items-center m-2 rounded-md max-w-full p-4 bg-base-100'>
-          <motion.a
-            whileHover={{ scale: 1.3 }}
-            whileTap={{ scale: 0.9 }}
-            title='instagram'
-            href='https://www.instagram.com/schenjalarin/'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='text-accent'
+          <Link
+            href='tel:+4915140486743'
+            className='btn btn-secondary flex items-center space-x-2'
           >
-            <FontAwesomeIcon icon={["fab", "instagram"]} size='2x' />
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.3 }}
-            whileTap={{ scale: 0.9 }}
-            title='telegram'
-            href='https://t.me/EvgeniiLari'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='text-accent'
+            <FontAwesomeIcon icon={["fas", "phone"]} />
+            <span>Call</span>
+          </Link>
+          <Link
+            className='btn btn-primary flex items-center space-x-2 my-2'
+            href='/contact'
           >
-            <FontAwesomeIcon icon={["fab", "telegram"]} size='2x' />
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.3 }}
-            whileTap={{ scale: 0.9 }}
-            title='whatsapp'
-            href='https://wa.me/+4915140486743'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='text-accent'
-          >
-            <FontAwesomeIcon icon={["fab", "whatsapp"]} size='2x' />
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.3 }}
-            whileTap={{ scale: 0.9 }}
-            title='github'
-            href='https://github.com/WirusDev'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='text-accent'
-          >
-            <FontAwesomeIcon icon={["fab", "github"]} size='2x' />
-          </motion.a>
+            <FontAwesomeIcon icon={["fas", "file-contract"]} />
+            <span>Contact form</span>
+          </Link>
+          <br />
+          <br />
+          {/* FOOTER */}
+          <div className='flex flex-row  justify-between gap-1 items-center my-2 rounded-btn max-w-full p-4 bg-base-100'>
+            <motion.a
+              whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.9 }}
+              title='instagram'
+              href='https://www.instagram.com/schenjalarin/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-accent'
+            >
+              <FontAwesomeIcon icon={["fab", "instagram"]} size='2x' />
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.9 }}
+              title='telegram'
+              href='https://t.me/EvgeniiLari'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-accent'
+            >
+              <FontAwesomeIcon icon={["fab", "telegram"]} size='2x' />
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.9 }}
+              title='whatsapp'
+              href='https://wa.me/+4915140486743'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-accent'
+            >
+              <FontAwesomeIcon icon={["fab", "whatsapp"]} size='2x' />
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.9 }}
+              title='github'
+              href='https://github.com/WirusDev'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-accent'
+            >
+              <FontAwesomeIcon icon={["fab", "github"]} size='2x' />
+            </motion.a>
+          </div>
         </div>
       </div>
     </>

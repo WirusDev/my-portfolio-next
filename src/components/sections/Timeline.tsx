@@ -1,6 +1,13 @@
+"use client";
+
+import React from "react";
+
 export default function Timeline() {
   return (
-    <div>
+    <div className='relative'>
+      <div className='absolute inset-0 flex justify-center'>
+        <div className='w-px bg-gray-300 h-full'></div>
+      </div>
       <ul className='timeline timeline-snap-icon max-md:timeline-compact timeline-vertical'>
         <li>
           <div className='timeline-middle'>
@@ -18,15 +25,12 @@ export default function Timeline() {
             </svg>
           </div>
           <div className='timeline-start mb-10 md:text-end'>
-            <time className='font-mono italic'>1984</time>
-            <div className='text-lg font-black'>First Macintosh computer</div>
-            The Apple Macintosh&mdash;later rebranded as the Macintosh
-            128K&mdash;is the original Apple Macintosh personal computer. It
-            played a pivotal role in establishing desktop publishing as a
-            general office function. The motherboard, a 9 in (23 cm) CRT
-            monitor, and a floppy drive were housed in a beige case with
-            integrated carrying handle; it came with a keyboard and
-            single-button mouse.
+            <time className='font-mono italic'>02/2024 - 07/2024</time>
+            <div className='text-lg font-black'>
+              Weiterbildung zum Full Stack Web Developer
+            </div>
+            inkl. TypeScript, React, NodeJS etc. <br />{" "}
+            <strong>Bei DBE Academy</strong>
           </div>
           <hr />
         </li>
@@ -47,12 +51,10 @@ export default function Timeline() {
             </svg>
           </div>
           <div className='timeline-end mb-10'>
-            <time className='font-mono italic'>1998</time>
-            <div className='text-lg font-black'>iMac</div>
-            iMac is a family of all-in-one Mac desktop computers designed and
-            built by Apple Inc. It has been the primary part of Apple&apos;s
-            consumer desktop offerings since its debut in August 1998, and has
-            evolved through seven distinct forms
+            <time className='font-mono italic'>09/2022 - 01/2024</time>
+            <div className='text-lg font-black'>Amazon Kundenservice</div>
+            Homeoffice
+            <br />+ Selbstschulung, um Entwickler zu werden.
           </div>
           <hr />
         </li>
@@ -73,15 +75,22 @@ export default function Timeline() {
             </svg>
           </div>
           <div className='timeline-start mb-10 md:text-end'>
-            <time className='font-mono italic'>2001</time>
-            <div className='text-lg font-black'>iPod</div>
-            The iPod is a discontinued series of portable media players and
-            multi-purpose mobile devices designed and marketed by Apple Inc. The
-            first version was released on October 23, 2001, about 8+1&#x2044;2
-            months after the Macintosh version of iTunes was released. Apple
-            sold an estimated 450 million iPod products as of 2022. Apple
-            discontinued the iPod product line on May 10, 2022. At over 20
-            years, the iPod brand is the oldest to be discontinued by Apple
+            <time className='font-mono italic'>03/2022 - 06/2022</time>
+            <div className='text-lg font-black'>Grafikdesigner bei Abihome</div>
+            Erstellung und Gestaltung von Abiturzeitungen
+            <br />
+            Kundenkontakt bezüglich der Anforderungen
+            <br />
+            Eingesetzte Tools: InDesign, Excel
+            <br />
+            <a
+              href='/arbeitszeugnis_abihome.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-blue-500 underline'
+            >
+              Arbeitzeugnis angucken
+            </a>
           </div>
           <hr />
         </li>
@@ -102,15 +111,25 @@ export default function Timeline() {
             </svg>
           </div>
           <div className='timeline-end mb-10'>
-            <time className='font-mono italic'>2007</time>
-            <div className='text-lg font-black'>iPhone</div>
-            iPhone is a line of smartphones produced by Apple Inc. that use
-            Apple&apos;s own iOS mobile operating system. The first-generation
-            iPhone was announced by then-Apple CEO Steve Jobs on January 9,
-            2007. Since then, Apple has annually released new iPhone models and
-            iOS updates. As of November 1, 2018, more than 2.2 billion iPhones
-            had been sold. As of 2022, the iPhone accounts for 15.6% of global
-            smartphone market share
+            <time className='font-mono italic'>09/2019 - 08/2022</time>
+            <div className='text-lg font-black'>
+              Ausbildung zum Grafikdesigner
+            </div>
+            Designschule Schwerin
+            <br />
+            Schwerpunkt: Content Management
+            <br />
+            <br />
+            Ausgewählte Lerninhalte:
+            <br />
+            - UI/UX Design
+            <br />
+            - Adobe Suite
+            <br />
+            - Suchmaschinenoptimierung
+            <br />
+            - Content-Management Systeme und Webdesign
+            <br />- Plakat-, Logo- und Corporate Design
           </div>
           <hr />
         </li>
@@ -131,12 +150,8 @@ export default function Timeline() {
             </svg>
           </div>
           <div className='timeline-start mb-10 md:text-end'>
-            <time className='font-mono italic'>2015</time>
-            <div className='text-lg font-black'>Apple Watch</div>
-            The Apple Watch is a line of smartwatches produced by Apple Inc. It
-            incorporates fitness tracking, health-oriented capabilities, and
-            wireless telecommunication, and integrates with iOS and other Apple
-            products and services
+            <time className='font-mono italic'>2008 - 2019</time>
+            <div className='text-lg font-black'>Ehm Welk Schule</div>
           </div>
         </li>
       </ul>
