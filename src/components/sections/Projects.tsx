@@ -33,7 +33,7 @@ const projectData = [
     link: "/projects/telegram-bot",
   },
   {
-    imgSrc: "/images/prod/twist.png",
+    imgSrc: "/images/prod/Twist.png",
     imgAlt: "twist",
     title: "twist",
     description: "twist",
