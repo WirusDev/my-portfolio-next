@@ -45,7 +45,7 @@ export default function Projects() {
   return (
     <div className='grid gap-4 grid-cols-1 md:grid-cols-3 xl:grid-cols-4'>
       {projectData.map((project, index) => (
-        <div key={index} className='card bg-base-300 w-fit'>
+        <div key={index} className='card bg-base-300 w-full'>
           <figure>
             <Image
               src={project.imgSrc}
