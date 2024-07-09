@@ -4,18 +4,18 @@ import Link from "next/link";
 import React from "react";
 
 const projectData = [
-  {
-    imgSrc: "/images/prod/lingoaa.jpg",
-    imgAlt: "Lingoaa",
-    title: "LingoA&A",
-    description: "How to park your car at your garage?",
-    link: "/projects/lingoaa",
-  },
+  // {
+  //   imgSrc: "/images/prod/lingoaa.jpg",
+  //   imgAlt: "Lingoaa",
+  //   title: "LingoA&A",
+  //   description: "How to park your car at your garage?",
+  //   link: "/projects/lingoaa",
+  // },
   {
     imgSrc: "/images/prod/cerise.jpg",
     imgAlt: "Cerise",
     title: "Cerise",
-    description: "How to park your car at your garage?",
+    description: "Beauty Studio Website",
     link: "/projects/cerise",
   },
   {
@@ -32,12 +32,18 @@ const projectData = [
     description: "How to park your car at your garage?",
     link: "/projects/telegram-bot",
   },
-  // Добавьте больше проектов здесь
+  {
+    imgSrc: "/images/prod/twist.png",
+    imgAlt: "twist",
+    title: "twist",
+    description: "twist",
+    link: "/projects/twist",
+  },
 ];
 
 export default function Projects() {
   return (
-    <div className='grid gap-4 grid-cols-1 md:grid-cols-3'>
+    <div className='grid gap-4 grid-cols-1 md:grid-cols-3 xl:grid-cols-4'>
       {projectData.map((project, index) => (
         <div key={index} className='card bg-base-300 w-fit'>
           <figure>
@@ -53,8 +59,8 @@ export default function Projects() {
             <h2 className='card-title'>{project.title}</h2>
             <p>{project.description}</p>
             <div className='card-actions justify-end'>
-              <Link className='btn btn-neutral btn-sm' href={project.link}>
-                Learn more
+              <Link className='btn btn-neutral btn-outline' href={project.link}>
+                Mehr erfahren
               </Link>
             </div>
           </div>
