@@ -39,6 +39,13 @@ const projectData = [
     description: "twist",
     link: "/projects/twist",
   },
+  {
+    imgSrc: "/images/prod/Twist.png",
+    imgAlt: "twist",
+    title: "twist",
+    description: "twist",
+    link: "/projects/twist",
+  },
 ];
 
 export default function Projects() {
