@@ -1,28 +1,22 @@
 import Link from "next/link";
-import Image from "next/image";
-const Regenbock = () => {
+
+const ReactBlock = () => {
   return (
     <div className='container mx-auto p-4'>
       <div className='bg-base-200 p-6 rounded-lg shadow-lg'>
-        <Image
-          src='/images/prod/Regen-Bock.png'
-          alt='Regenbock'
-          width={1000}
-          height={1000}
-          className='w-full'
-        />
-        <h1 className='text-4xl font-bold mb-4'>Regen Bock</h1>
+        <h1 className='text-4xl font-bold mb-4'>ReactBlock</h1>
 
         <div className='prose'>
           <h2 className='text-2xl'>Projektbeschreibung:</h2>
           <p>
             Dieses Projekt basiert auf React mit TypeScript und Vite. Es
             unterstützt Hot Module Replacement (HMR) und enthält
-            ESLint-Konfigurationen zur Sicherstellung hoher Codequalität.
+            ESLint-Konfigurationen zur Sicherstellung hoher Codequalität. Das
+            Design der Webseite wurde von meiner Freundin erstellt, die diesen
+            Entwurf als Abschlussprojekt in ihrer Designschule entwickelt hat.
           </p>
           <br />
           <h2 className='text-2xl'>Technologien:</h2>
-
           <ul>
             <li>
               <strong>React:</strong> Bibliothek zur Erstellung von
@@ -42,7 +36,6 @@ const Regenbock = () => {
           </ul>
           <br />
           <h2 className='text-2xl'>Features:</h2>
-
           <ul>
             <li>
               Minimale Konfiguration für schnellen Start mit React und Vite.
@@ -75,44 +68,19 @@ const Regenbock = () => {
             </li>
           </ul>
           <br />
-          {/* <h2 className='text-2xl'>Nutzung:</h2>
-          <ol>
-            <li>
-              <strong>Repository klonen:</strong>
-              <div className='mockup-code w-screen '>
-                <pre data-prefix='$'>
-                  <code className='language-bash'>
-                    git clone https://github.com/WirusDev/regen-bock
-                  </code>
-                </pre>
-              </div>
-            </li>
-            <li>
-              <strong>Abhängigkeiten installieren:</strong>
-              <pre>
-                <code>npm install</code>
-              </pre>
-            </li>
-            <li>
-              <strong>Projekt starten:</strong>
-              <pre>
-                <code>npm run dev</code>
-              </pre>
-            </li>
-          </ol>
-          <br /> */}
           <h2 className='text-2xl'>GitHub-Repository:</h2>
           <p>
             <a
-              href='https://github.com/WirusDev/regen-bock'
+              href='https://github.com/WirusDev/reactblock'
               target='_blank'
               rel='noopener noreferrer'
               className='text-blue-500 underline'
             >
-              GitHub - WirusDev/regen-bock
+              GitHub - WirusDev/reactblock
             </a>
           </p>
           <br />
+
           <h2 className='text-2xl'>Live-Demo:</h2>
           <p>
             <a
@@ -125,6 +93,19 @@ const Regenbock = () => {
             </a>
           </p>
           <br />
+          <h2 className='text-2xl'>Designer:</h2>
+          <p>
+            Design erstellt von{" "}
+            <Link
+              href='https://www.an-co-design.de'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-blue-500 underline'
+            >
+              Anastasia Cozarevici
+            </Link>
+          </p>
+          <br />
         </div>
         <Link href='/' className='btn btn-accent mt-4'>
           Zurück
@@ -134,4 +115,4 @@ const Regenbock = () => {
   );
 };
 
-export default Regenbock;
+export default ReactBlock;

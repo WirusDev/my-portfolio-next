@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ThemeSwitcher from "@/components/ui/ThemeSwitcher";
-
+import Link from "next/link";
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang='en'>
@@ -15,13 +15,23 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
 
           <div className='drawer-content'>
             <div className='flex justify-between px-4'>
+              <div className='p-4'>
+                <h3 className='text-3xl '>
+                  <Link href='/'>
+                    <strong className='text-accent underline underline-offset-4'>
+                      Portfolio
+                    </strong>
+                  </Link>
+                </h3>
+                <p>by Evgenii Larin </p>
+              </div>
               <label
                 htmlFor='my-drawer-2'
                 className='btn btn-accent drawer-button lg:hidden my-4 uppercase'
               >
-                menu
+                Kontakt
               </label>
-              <ThemeSwitcher />
+              {/* <ThemeSwitcher /> */}
             </div>
             {/* Page content here */}
             <div className='p-4'> {children}</div>

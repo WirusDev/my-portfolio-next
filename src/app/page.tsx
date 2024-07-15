@@ -10,6 +10,20 @@ const HomePage = () => {
             type='radio'
             name='my_tabs_2'
             role='tab'
+            className='tab  '
+            aria-label='Projekte'
+            defaultChecked
+          />
+          <div
+            role='tabpanel'
+            className='tab-content bg-base-100 border-base-300 rounded-box p-6 '
+          >
+            <Projects />
+          </div>
+          <input
+            type='radio'
+            name='my_tabs_2'
+            role='tab'
             className='tab'
             aria-label='About'
           />
@@ -31,21 +45,6 @@ const HomePage = () => {
             className='tab-content bg-base-100 border-base-300 rounded-box p-6'
           >
             <Timeline />
-          </div>
-
-          <input
-            type='radio'
-            name='my_tabs_2'
-            role='tab'
-            className='tab'
-            aria-label='Projekte'
-            defaultChecked
-          />
-          <div
-            role='tabpanel'
-            className='tab-content bg-base-100 border-base-300 rounded-box p-6 '
-          >
-            <Projects />
           </div>
         </div>
       </main>

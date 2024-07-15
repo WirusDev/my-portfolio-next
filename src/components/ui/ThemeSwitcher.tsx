@@ -35,7 +35,7 @@ const ThemeSwitcher: React.FC = () => {
     "winter",
   ];
 
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("retro");
 
   useEffect(() => {
     document.querySelector("html")?.setAttribute("data-theme", theme);

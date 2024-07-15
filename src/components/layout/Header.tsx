@@ -19,12 +19,13 @@ const Header: React.FC = () => {
           <Image
             src='/images/Evgenii.jpeg'
             alt='Evgenii Larin'
-            className='rounded-lg my-1 w-full mask mask-hexagon'
+            className='rounded-lg my-1 w-full mask mask-hexagon cursor-pointer'
             width={200}
             height={200}
+            onClick={() => (window.location.href = "/")}
           />
           <div className='flex flex-col text-ledt m-2'>
-            <p className='text-secondary pb-1'>Full Stack Web-Developer</p>
+            <p className='text-primary pb-1'>Full Stack Web-Developer</p>
             <h1 className='text-3xl pb-2'>Evgenii Larin</h1>
           </div>
 
