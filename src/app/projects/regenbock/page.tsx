@@ -4,34 +4,36 @@ const ReactBlock = () => {
   return (
     <div className='container mx-auto p-4'>
       <div className='bg-base-200 p-6 rounded-lg shadow-lg'>
-        <h1 className='text-4xl font-bold mb-4'>ReactBlock</h1>
+        <h1 className='text-4xl font-bold mb-4'>Regen Bock</h1>
 
         <div className='prose'>
           <h2 className='text-2xl'>Projektbeschreibung:</h2>
           <p>
-            Dieses Projekt basiert auf React mit TypeScript und Vite. Es
-            unterstützt Hot Module Replacement (HMR) und enthält
-            ESLint-Konfigurationen zur Sicherstellung hoher Codequalität. Das
-            Design der Webseite wurde von meiner Freundin erstellt, die diesen
-            Entwurf als Abschlussprojekt in ihrer Designschule entwickelt hat.
+            Dieses Projekt entstand aus einer wunderschönen Zusammenarbeit.
+            Meine Freundin entwarf das Design für ihre Abschlussarbeit an der
+            Designschule, und ich setzte ihre Vision mit modernsten Technologien
+            um. Mit React, TypeScript, Vite und Tailwind CSS schuf ich eine
+            dynamische und ansprechende Webseite, die ihre kreativen Ideen
+            perfekt zum Leben erweckt. Es war eine fantastische Erfahrung, ihre
+            Designelemente in eine funktionsfähige und ästhetisch ansprechende
+            Webseite zu verwandeln, die sowohl Benutzerfreundlichkeit als auch
+            visuelle Attraktivität bietet.
           </p>
           <br />
           <h2 className='text-2xl'>Technologien:</h2>
           <ul>
             <li>
+              <strong>TypeScript:</strong> Statische Typisierung für JavaScript.
+            </li>
+            <li>
               <strong>React:</strong> Bibliothek zur Erstellung von
               Benutzeroberflächen.
             </li>
             <li>
-              <strong>TypeScript:</strong> Statische Typisierung für JavaScript.
+              <strong>Vite:</strong> Entwicklungs- und Build-Tool.
             </li>
             <li>
-              <strong>Vite:</strong> Entwicklungs- und Build-Tool mit schneller
-              Neuladefunktion.
-            </li>
-            <li>
-              <strong>ESLint:</strong> Tool zur statischen Codeanalyse und
-              Qualitätskontrolle.
+              <strong>Tailwind CSS:</strong> Hilfswerkzeug für die Gestaltung.
             </li>
           </ul>
           <br />
@@ -42,31 +44,7 @@ const ReactBlock = () => {
             </li>
             <li>Erweiterbare ESLint-Konfiguration mit typbasierten Regeln.</li>
           </ul>
-          <br />
-          <h2 className='text-2xl'>Projektstruktur:</h2>
-          <ul>
-            <li>
-              <strong>components:</strong> React-Komponenten.
-            </li>
-            <li>
-              <strong>pages:</strong> Anwendungsseiten.
-            </li>
-            <li>
-              <strong>public:</strong> Statische Dateien.
-            </li>
-            <li>
-              <strong>styles:</strong> Anwendungsstile.
-            </li>
-            <li>
-              <strong>.eslintrc.cjs:</strong> ESLint-Konfiguration.
-            </li>
-            <li>
-              <strong>tailwind.config.ts:</strong> Tailwind CSS-Konfiguration.
-            </li>
-            <li>
-              <strong>package.json:</strong> Projektabhängigkeiten und Skripte.
-            </li>
-          </ul>
+
           <br />
           <h2 className='text-2xl'>GitHub-Repository:</h2>
           <p>
@@ -95,7 +73,7 @@ const ReactBlock = () => {
           <br />
           <h2 className='text-2xl'>Designer:</h2>
           <p>
-            Design erstellt von{" "}
+            Design erstellt von {` `}
             <Link
               href='https://www.an-co-design.de'
               target='_blank'
