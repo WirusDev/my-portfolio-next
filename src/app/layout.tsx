@@ -8,7 +8,7 @@ import ThemeSwitcher from "@/components/ui/ThemeSwitcher";
 import Link from "next/link";
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <html lang='en'>
+    <html lang='de'>
       <body>
         <div className='drawer lg:drawer-open'>
           <input id='my-drawer-2' type='checkbox' className='drawer-toggle' />
@@ -18,7 +18,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
               <div className='p-4'>
                 <h3 className='text-3xl '>
                   <Link href='/'>
-                    <strong className='text-accent underline underline-offset-4'>
+                    <strong className='text-accent text-righ underline underline-offset-4 uppercase'>
                       Portfolio
                     </strong>
                   </Link>

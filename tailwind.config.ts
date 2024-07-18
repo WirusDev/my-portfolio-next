@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        righ: ["Righteous", "sans-serif"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -25,7 +28,7 @@ const config: Config = {
       // "emerald",
       // "corporate",
       // "synthwave",
-      "retro",
+      // "retro",
       // "cyberpunk",
       // "valentine",
       // "halloween",
@@ -40,7 +43,7 @@ const config: Config = {
       // "luxury",
       // "dracula",
       // "cmyk",
-      // "autumn",
+      "autumn",
       // "business",
       // "acid",
       // "lemonade",

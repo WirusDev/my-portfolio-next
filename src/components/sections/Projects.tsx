@@ -5,18 +5,13 @@ import React from "react";
 import { motion } from "framer-motion";
 const projectData = [
   {
-    imgSrc: "/images/prod/cerise.jpg",
-    imgAlt: "Cerise",
-    title: "Cerise",
-    description: [
-      "Web-Seite",
-      "React",
-      "TS",
-      "Vercel",
-      "Termin Buchung-system",
-    ],
-    link: "/projects/cerise",
+    imgSrc: "/images/prod/portfolio.png",
+    imgAlt: "Regen-Bock",
+    title: "Regen-Bock",
+    description: ["Next.js", "React", "TS", "Vercel"],
+    link: "/projects/portfolio",
   },
+
   {
     imgSrc: "/images/prod/Regen-Bock.png",
     imgAlt: "Regen-Bock",
@@ -37,6 +32,19 @@ const projectData = [
     title: "Twist",
     description: ["Web-App", "React", "TS", "Vercel"],
     link: "/projects/twist",
+  },
+  {
+    imgSrc: "/images/prod/cerise.jpg",
+    imgAlt: "Cerise",
+    title: "Cerise",
+    description: [
+      "Termin Buchung-system",
+      "Web-Seite",
+      "React",
+      "TS",
+      "Vercel",
+    ],
+    link: "/projects/cerise",
   },
 ];
 
@@ -92,7 +100,7 @@ export default function Projects() {
               {projectData[index].description.map((desc, index) => (
                 <div
                   key={index}
-                  className='badge bg-accent  badge-md  p-2  mr-1 border-none'
+                  className='badge bg-accent  badge-md rounded-md p-2  mr-1 border-none'
                 >
                   {desc}
                 </div>

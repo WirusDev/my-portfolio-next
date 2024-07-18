@@ -13,20 +13,28 @@ const Header: React.FC = () => {
         aria-label='close sidebar'
         className='drawer-overlay'
       ></label>
-      <div className='menu bg-base-200 text-base-content h-full w-80 px-4 flex flex-col justify-between'>
+      <div className='menu bg-base-200 text-base-content h-screen w-80 px-4 flex flex-col justify-between'>
         {/* Sidebar content here */}
         <div className=''>
           <Image
             src='/images/Evgenii.jpeg'
             alt='Evgenii Larin'
-            className='rounded-lg my-1 w-full mask mask-hexagon cursor-pointer'
+            className='rounded-btn my-1 w-full cursor-pointer '
             width={200}
             height={200}
+            priority={true}
             onClick={() => (window.location.href = "/")}
           />
-          <div className='flex flex-col text-ledt m-2'>
-            <p className='text-primary pb-1'>Full Stack Web-Developer</p>
+          <div className='flex flex-col text-left my-2 z-10 pl-1'>
+            <p className='text-secondary pb-1 '>
+              Fullstack-Web-Entwickler <br /> mit Hintergrund in Grafikdesign{" "}
+            </p>
             <h1 className='text-3xl pb-2'>Evgenii Larin</h1>
+
+            <p className='text-lg'>
+              Ich bin ein FullStack-Webentwickler mit Fokus auf React, Next.js,
+              Node.js und TypeScript.
+            </p>
           </div>
 
           <br />
@@ -44,16 +52,17 @@ const Header: React.FC = () => {
             <FontAwesomeIcon icon={["fas", "phone"]} />
             <span>Call</span>
           </Link>
-          <Link
+          {/* <Link
             className='btn btn-primary flex items-center space-x-2 my-2'
             href='/contact'
           >
             <FontAwesomeIcon icon={["fas", "file-contract"]} />
             <span>Contact form</span>
-          </Link>
+          </Link> */}
           <br />
           <br />
           {/* FOOTER */}
+          <div className=''></div>
           <div className='flex flex-row  justify-between gap-1 items-center my-2 rounded-btn max-w-full p-4 bg-base-100'>
             <motion.a
               whileHover={{ scale: 1.3 }}
