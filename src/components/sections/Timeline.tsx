@@ -5,6 +5,10 @@ import Link from "next/link";
 export default function Timeline() {
   return (
     <div>
+      <h2 className='text-3xl font-bold mb-4 mt-10 md:text-center'>
+        Berufliche Laufbahn
+      </h2>
+
       <ul className='timeline timeline-snap-icon max-md:timeline-compact timeline-vertical'>
         <li>
           <div className='timeline-middle'>
@@ -22,24 +26,26 @@ export default function Timeline() {
             </svg>
           </div>
           <div className='timeline-start mb-12 md:text-end'>
-            <time className='font-mono italic'>02/2024 - 07/2024</time>
+            <time className='font-mono italic'>01/2023 - 09/2023</time>
             <div className='text-lg font-black'>
-              Weiterbildung zum Full Stack Web Developer
+              Wordpress Developer bei LingoA&A
             </div>
-            inkl. TypeScript, React, NodeJS etc.
+            Homeoffice · Projektarbeit
+            <br />
+            Verantwortlich für die von Grund auf erstellte Website mit WordPress
+            und Elementor, einschließlich Logo- und Layout-Design sowie der
+            Implementierung und Aktualisierung aller Funktionen und Inhalte.
             <br />
             <Link
-              href='/docs/DBE.pdf'
+              href='https://lingoaa.com/'
               target='_blank'
               rel='noopener noreferrer'
               className='text-blue-500 underline'
             >
-              Zertifikat ansehen
+              Link zu Webseite
             </Link>
             <br />
-            <br />
           </div>
-
           <hr />
         </li>
         <li>
@@ -61,7 +67,7 @@ export default function Timeline() {
           <div className='timeline-end mb-10'>
             <time className='font-mono italic'>09/2022 - 01/2024</time>
             <div className='text-lg font-black'>Amazon Kundenservice</div>
-            Homeoffice
+            Homeoffice · Vollzeit
             <br />+ Selbstschulung zur Qualifikation als Entwickler
             <br />
             <Link
@@ -107,6 +113,45 @@ export default function Timeline() {
               className='text-blue-500 underline'
             >
               Arbeitszeugnis ansehen
+            </Link>
+            <br />
+            <br />
+          </div>
+        </li>
+      </ul>
+      <h2 className='text-3xl font-bold mb-4 md:text-center'>
+        Schulbildung und Ausbildung
+      </h2>
+      <ul className='timeline timeline-snap-icon max-md:timeline-compact timeline-vertical'>
+        <li>
+          <div className='timeline-middle'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 20 20'
+              fill='currentColor'
+              className='h-5 w-5'
+            >
+              <path
+                fillRule='evenodd'
+                d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
+                clipRule='evenodd'
+              />
+            </svg>
+          </div>
+          <div className='timeline-start mb-12 md:text-end'>
+            <time className='font-mono italic'>02/2024 - 07/2024</time>
+            <div className='text-lg font-black'>
+              Weiterbildung zum Full Stack Web Developer
+            </div>
+            inkl. TypeScript, React, NodeJS etc.
+            <br />
+            <Link
+              href='/docs/DBE.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-blue-500 underline'
+            >
+              Zertifikat ansehen
             </Link>
             <br />
             <br />
@@ -182,6 +227,8 @@ export default function Timeline() {
           </div>
         </li>
       </ul>
+
+      <br />
     </div>
   );
 }
