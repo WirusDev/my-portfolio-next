@@ -52,6 +52,12 @@ const Header: React.FC = () => {
             <FontAwesomeIcon icon={["fas", "phone"]} />
             <span>Call</span>
           </Link>
+          <Link
+            href='/pages/login'
+            className='btn btn-neutral flex items-center space-x-2 mt-2'
+          >
+            <span>Login</span>
+          </Link>
           {/* <Link
             className='btn btn-primary flex items-center space-x-2 my-2'
             href='/contact'

@@ -9,7 +9,7 @@ const projectData = [
     imgAlt: "Regen-Bock",
     title: "Regen-Bock",
     description: ["Next.js", "React", "TS", "Vercel"],
-    link: "/projects/portfolio",
+    link: "/pages/projects/portfolio",
   },
 
   {
@@ -17,21 +17,21 @@ const projectData = [
     imgAlt: "Regen-Bock",
     title: "Regen-Bock",
     description: ["Web-Seite", "React", "TS", "Vercel"],
-    link: "/projects/regenbock",
+    link: "/pages/projects/regenbock",
   },
   {
     imgSrc: "/images/prod/telegram-bot.png",
     imgAlt: "Telegram-Bot",
     title: "Telegram-Bot",
     description: ["Telegram-Bot", "TypeScript", "API", "Back-end"],
-    link: "/projects/telegram-bot",
+    link: "/pages/projects/telegram-bot",
   },
   {
     imgSrc: "/images/prod/Twist.png",
     imgAlt: "twist",
     title: "Twist",
     description: ["Web-App", "React", "TS", "Vercel"],
-    link: "/projects/twist",
+    link: "/pages/projects/twist",
   },
   {
     imgSrc: "/images/prod/cerise.jpg",
@@ -44,7 +44,7 @@ const projectData = [
       "TS",
       "Vercel",
     ],
-    link: "/projects/cerise",
+    link: "/pages/projects/cerise",
   },
 ];
 

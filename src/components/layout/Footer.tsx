@@ -8,10 +8,10 @@ const Footer: React.FC = () => {
         <p>&copy; {new Date().getFullYear()} Portfolio by Evgenii Larin </p>
         {/* <p>Alle Rechte vorbehalten.</p> */}
         <div>
-          <Link href='/legal/impressum' className='mr-4'>
+          <Link href='/pages/legal/impressum' className='mr-4'>
             Impressum
           </Link>
-          <Link href='/legal/datenschutz'>Datenschutz</Link>
+          <Link href='/pages/legal/datenschutz'>Datenschutz</Link>
         </div>
       </footer>
     </>
