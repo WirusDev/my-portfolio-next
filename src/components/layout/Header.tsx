@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@/utils/fontawesome";
 import { motion } from "framer-motion";
+
 const Header: React.FC = () => {
   return (
     <>
@@ -53,7 +54,7 @@ const Header: React.FC = () => {
             <span>Call</span>
           </Link>
           <Link
-            href='/pages/login'
+            href='/login'
             className='btn btn-neutral flex items-center space-x-2 mt-2'
           >
             <span>Login</span>

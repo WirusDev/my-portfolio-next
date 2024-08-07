@@ -1,19 +1,38 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextResponse } from "next/server";
+import { createUser } from "@/queries/users";
+
 import bcrypt from "bcryptjs";
-import clientPromise from "@/lib/mongodb";
+import { dbConnect } from "@/lib/mongo";
 
-export async function POST(req: NextApiRequest, res: NextApiResponse) {
-  const { email, password } = req.body;
-  const client = await clientPromise;
-  const db = client.db();
-  const usersCollection = db.collection("users");
+export const POST = async (request: {
+  json: () =>
+    | PromiseLike<{ name: any; email: any; password: any }>
+    | { name: any; email: any; password: any };
+}) => {
+  const { name, email, password } = await request.json();
 
-  const hashedPassword = await bcrypt.hash(password, 10);
+  console.log(name, email, password);
 
-  await usersCollection.insertOne({
-    email,
+  // Create a DB Conenction
+  await dbConnect();
+  // Encrypt the password
+  const hashedPassword = await bcrypt.hash(password, 5);
+  // Form a DB payload
+  const newUser = {
+    name,
     password: hashedPassword,
-  });
+    email,
+  };
+  // Update the DB
+  try {
+    await createUser(newUser);
+  } catch (err: any) {
+    return new NextResponse(err.message, {
+      status: 500,
+    });
+  }
 
-  res.status(200).json({ message: "User registered" });
-}
+  return new NextResponse("User has been created", {
+    status: 201,
+  });
+};
